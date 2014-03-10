@@ -1,3 +1,3 @@
-This is a project drived with WDJ-Generator
+Multimedia Admin System for WandouLabs
 ===========
-我是赵望野，不用太感谢我。
+
