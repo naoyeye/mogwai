@@ -134,6 +134,7 @@ header#header{
     height: 30px;
     padding: 10px;
     border-radius: 0;
+    margin-bottom: 0;
 }
 
 #logo{
@@ -153,7 +154,7 @@ header#header{
 
 
 #main{
-    padding: 10px 10px 30px 10px;
+    padding: 10px 15px 30px 0px;
 }
 #main:after{
     content: " ";
@@ -163,24 +164,60 @@ header#header{
     clear: both;
 }
 
-
 // aside
     aside.ui.menu{
+        position: relative;
         float: left;
+        border-radius: 0 5px 5px 0;
+        box-shadow: none;
+        -webkit-transition:margin 0.2s;
+        -moz-transition:margin 0.2s;
+        transition:margin 0.2s;
+    }
+    .ui.menu .item .item,
+    .ui.menu .item .item>a:not(.button){
+        font-size: 14px;
+        // color: #3baa24;
     }
     .ui.menu .item .item .item,
     .ui.menu .item .item .item>a:not(.button){
-        font-size: 12px;
-        color: #3baa24;
+        // font-size: 12px;
+        // color: #3baa24;
+    }
+    aside.ui.accordion .item  .item  .title{
+        margin-left: 0px;
+        padding-left: 0;
+    }
+    aside.ui.accordion .item  .title .dropdown.icon{
+        margin-right: 0;
+    }
+
+    #switchAsideBtn{
+        position: absolute;
+        top: 15px;
+        right: -25px;
+        padding: 1em 0.5em;
+        border-radius: 0 5px 5px 0;
+        box-shadow: none;
+        border:none;
+        background: #333;
     }
 
 // article
     #content{
-        margin-left: 240px;
-        min-height: 500px;
+        margin-left: 255px;
+        min-height: 800px;
         background:#fff;
         box-shadow: 0 0 0 1px rgba(0,0,0,.1);
         border-radius: 5px;
+        -webkit-transition:margin 0.2s;
+        -moz-transition:margin 0.2s;
+        transition:margin 0.2s;
     }
 
-
+#main.aside_closed aside.ui.menu{
+    margin-left: -225px;
+}
+#main.aside_closed #content{
+    margin-left: 15px; 
+}
