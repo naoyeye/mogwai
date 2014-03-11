@@ -114,7 +114,7 @@ module.exports = function (grunt) {
             options : {
                 sassDir : '<%= paths.app %>/compass/sass',
                 imagesDir : '<%= paths.app %>/compass/images',
-                fontsDir : '<%= paths.app %>/images/fonts',
+                fontsDir : '<%= paths.app %>/fonts',
                 relativeAssets : true
             },
             dist : {
@@ -129,11 +129,13 @@ module.exports = function (grunt) {
                 options : {
                     cssDir : '<%= paths.tmp %>/stylesheets',
                     generatedImagesDir : '<%= paths.tmp %>/images',
+                    // fontsDir : '<%= paths.tmp %>/fonts',
                     debugInfo : true,
                     environment : 'development'
                 }
             }
         },
+
         rev: {
             dist: {
                 files: {
@@ -224,8 +226,8 @@ module.exports = function (grunt) {
         'clean:server',
         'compass:server',
         'connect:server',
-        'karma:server',
-        'open',
+        // 'karma:server',
+        // 'open',
         'watch'
     ]);
 

@@ -1,4 +1,34 @@
 
+@font-face {
+    font-family: 'wandoujia';
+    src:url('../fonts/wandoujia.eot?tnjbzq');
+    src:url('../fonts/wandoujia.eot?#iefixtnjbzq') format('embedded-opentype'),
+        url('../fonts/wandoujia.woff?tnjbzq') format('woff'),
+        url('../fonts/wandoujia.ttf?tnjbzq') format('truetype'),
+        url('../fonts/wandoujia.svg?tnjbzq#wandoujia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'wandoujia';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wdj-logo:before {
+    content: "\e600";
+}
+
+
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
 
@@ -154,29 +184,30 @@ body{
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-header#header{
-    height: 30px;
-    padding: 10px 15px;
+header#header.ui.menu{
     border-radius: 0;
     margin-bottom: 0;
+    background: #333332;
 }
 
-#logo{
+header#header.ui.menu .item{
+    // padding: .83em .95em;
+    padding: 1.1em 1.2em;
+}
+header#header.ui.menu .item.logo{
+    font-size: 28px;
+    padding: 10px 15px 8px 15px;
+    border-radius: 0;
+    // color: #3baa24
+}
+header#header.ui.menu .item.logo span{
+    font-size: 14px;
+    vertical-align: top;
+    padding-top: 8px;
     display: inline-block;
-    height: 30px;
-    padding-left: 40px;
-    color: #fff;
-    font-size: 20px;
-    background: url(../images/logo_new_latest.png) 0 0 no-repeat;
-    background-size: 30px;
-    line-height: 30px;
 }
 
-#logo img{
-    height: 30px;
-}
-
-
+// =============
 #main{
     padding: 20px 15px 30px 0px;
 }
@@ -198,19 +229,39 @@ header#header{
         -moz-transition:margin 0.2s;
         transition:margin 0.2s;
     }
+    aside.ui.menu .item{
+        display: block;
+        padding: 0;
+    }
+    aside.ui.menu .item > a:not(.button){
+        display: block;
+    }
     aside.ui.menu .item .item,
-    aside.ui.menu .item .item>a:not(.button){
+    aside.ui.menu .item .item > a:not(.button){
         font-size: 14px;
         color: #333;
+        display: block;
     }
     aside.ui.menu .item .item .item,
-    aside.ui.menu .item .item .item>a:not(.button){
+    aside.ui.menu .item .item .item > a:not(.button){
         font-size: 12px !important;
         color: #333;
     }
-    aside.ui.accordion .item  .item  .title{
+    aside.ui.accordion .item .item .title{
         margin-left: 0px;
         padding-left: 0;
+    }
+    aside.ui.vertical.menu .item > .menu > .item{
+        padding:0;
+
+    }
+    aside.ui.vertical.menu .item > .menu{
+        margin: 0;
+        padding: 0px;
+    }
+    aside.ui.accordion .title,
+    aside.ui.accordion .accordion .title{
+        padding: 0;
     }
     aside.ui.accordion .item  .title .dropdown.icon{
         margin-right: 0;
@@ -246,8 +297,8 @@ header#header{
         height: 40px; /* bug O_O */
         border-radius: 5px;
     }
-    .controlbar:after{
-
+    .controlbar.ui.menu .item:before{
+        display: none;
     }
 
 
@@ -258,5 +309,6 @@ header#header{
     margin-left: -225px;
 }
 #main.aside_closed #content{
-    margin-left: 15px; 
+    margin-left: 35px; 
+    margin-right: 25px; 
 }
