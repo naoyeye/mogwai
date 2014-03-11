@@ -4,6 +4,6 @@ $(function(){
 
     $('#switchAsideBtn').click(function(){
         $('#main').toggleClass('aside_closed');
-        $('#switchAsideBtn i').toggleClass('right')
+        $('#switchAsideBtn i').toggleClass('right');
     })
 })

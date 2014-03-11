@@ -16,12 +16,12 @@
     </head>
     <body>
         <header id="header" class="ui inverted menu">
-            <div id="logo">Name</div>
+            <div id="logo"></div>
         </header>
 
         <div id="main">
-
-            <aside class="ui inverted vertical accordion menu">
+            <!-- 左侧导航 -->
+            <aside class="ui basic vertical accordion menu">
                 <div class="item">
                     <a class="title active">
                         <i class="dropdown icon"></i>
@@ -29,7 +29,7 @@
                         视频
                     </a>
                     <div class="content menu active">
-                        <a href="#" class="item">浏览全部</a>
+                        <a href="#" class="item">浏览区</a>
                         <a href="#" class="item">搜索风向标</a>
                         <div class="item">
                             <a class="title active">
@@ -90,8 +90,89 @@
                 </div>
             </aside>
 
+
+            <!-- 右侧内容区 -->
             <article id="content">
+
+                <!-- 面包屑导航 -->
+                <div class="ui breadcrumb">
+                    <a class="section">视频</a>
+                    <i class="right arrow icon divider"></i>
+                    <a class="section">上下线</a>
+                    <i class="right arrow icon divider"></i>
+                    <div class="active section">字幕审核</div>
+                </div>
+
+                <!-- 控制条 -->
+                <div class="ui menu inverted controlbar">
+                   <!--  <div class="item">
+                        <div class="ui teal button">Sign up</div>
+                    </div>
+                    <div class="item">
+                        <div class="ui button">Log-in</div>
+                    </div> -->
+                </div>
+
                 <!-- 内容区 -->
+                <div class="ui segment">
+                    <h1 class="ui header">字幕审核</h1>
+
+                    <!-- 数据展示 -->
+                    <table class="ui table basic">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>标题</th>
+                                <th>Status</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>No Name Specified</td>
+                                <td>Unknown</td>
+                                <td>None</td>
+                            </tr>
+                            <tr class="positive">
+                                <td>1</td>
+                                <td>Jimmy</td>
+                                <td><i class="icon checkmark"></i> Approved</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Jamie</td>
+                                <td>Unknown</td>
+                                <td class="negative"><i class="icon close"></i> Requires call</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Jill</td>
+                                <td>Unknown</td>
+                                <td>None</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- 分页 -->
+                    <div class="pagination_wrap">
+                        <div class="ui borderless pagination menu">
+                            <a class="item">
+                                <i class="left arrow icon"></i> 上一页
+                            </a>
+                            <a class="item active">1</a>
+                            <a class="item">2</a>
+                            <a class="item">3</a>
+                            <a class="item">4</a>
+                            <a class="item">5</a>
+                            <a class="item">6</a>
+                            <a class="item">
+                                下一页 <i class="icon right arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
     </body>
