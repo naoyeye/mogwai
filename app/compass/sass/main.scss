@@ -1,9 +1,3 @@
-/*
-YUI 3.14.1 (build 63049cb)
-Copyright 2013 Yahoo! Inc. All rights reserved.
-Licensed under the BSD License.
-http://yuilibrary.com/license/
-*/
 
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
@@ -157,7 +151,6 @@ body{
     text-rendering: optimizeLegibility;
     background: #f5f5f5;
     font-size: 14px;
-    // line-height: 1px;
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -195,7 +188,7 @@ header#header{
     clear: both;
 }
 
-// aside
+/* aside */
     aside.ui.menu{
         position: relative;
         float: left;
@@ -235,14 +228,10 @@ header#header{
         z-index: 1;
     }
 
-// article
+/* article */
     #content{
         margin-top: 0;
         margin-left: 255px;
-        // min-height: 800px;
-        // background:#fff;
-        // box-shadow: 0 0 0 1px rgba(0,0,0,.1);
-        // border-radius: 5px;
         -webkit-transition:margin 0.2s;
         -moz-transition:margin 0.2s;
         transition:margin 0.2s;
@@ -252,14 +241,19 @@ header#header{
         margin-top: 0;
     }
 
-    .controlbar{
-        line-height: 1;
+    .controlbar.ui.menu{
+        margin: 0 0 10px 0;
+        height: 40px; /* bug O_O */
+        border-radius: 5px;
+    }
+    .controlbar:after{
+
     }
 
 
 
 
-// toggle
+/* toggle */
 #main.aside_closed aside.ui.menu{
     margin-left: -225px;
 }
