@@ -233,31 +233,43 @@ header#header.ui.menu .item.logo span{
         display: block;
         padding: 0;
     }
+
     aside.ui.menu .item > a:not(.button){
         display: block;
+        padding: 15px 10px;
     }
     aside.ui.menu .item .item,
     aside.ui.menu .item .item > a:not(.button){
         font-size: 14px;
-        color: #333;
+        // color: #333;
         display: block;
+        padding: 10px;
+        // margin: -10px;
+    }
+    aside.ui.menu .item .item > a:not(.button){
+        margin: -10px 0 -10px -10px;
+        background: none;
     }
     aside.ui.menu .item .item .item,
     aside.ui.menu .item .item .item > a:not(.button){
         font-size: 12px !important;
-        color: #333;
+        // color: #333;
     }
     aside.ui.accordion .item .item .title{
         margin-left: 0px;
         padding-left: 0;
     }
     aside.ui.vertical.menu .item > .menu > .item{
-        padding:0;
+        padding: 12px 10px 12px 18px;
 
     }
     aside.ui.vertical.menu .item > .menu{
         margin: 0;
         padding: 0px;
+    }
+
+    aside.ui.vertical.menu .item > .menu .menu{
+        margin: 10px 0 -12px 0;
     }
     aside.ui.accordion .title,
     aside.ui.accordion .accordion .title{
@@ -265,6 +277,14 @@ header#header.ui.menu .item.logo span{
     }
     aside.ui.accordion .item  .title .dropdown.icon{
         margin-right: 0;
+    }
+
+    aside.ui.vertical.menu > .item:first-child{
+        border-radius: 0 5px 0 0;
+        overflow: hidden;
+    }
+    aside.ui.vertical.menu .item:last-child{
+        margin-bottom: 7px;
     }
 
     #switchAsideBtn{
@@ -294,11 +314,31 @@ header#header.ui.menu .item.logo span{
 
     .controlbar.ui.menu{
         margin: 0 0 10px 0;
+        padding: 10px;
         height: 40px; /* bug O_O */
         border-radius: 5px;
+        -webkit-box-sizing:10px;
+        -moz-box-sizing:10px;
+        box-sizing:10px;
     }
     .controlbar.ui.menu .item:before{
         display: none;
+    }
+    .controlbar.ui.menu:not(.vertical) .item.buttons{
+        padding: 0 10px 0 0;
+    }
+    .controlbar.ui.menu:not(.vertical) .item > .button{
+        position: static;
+        top: 0;
+        margin: 0;
+        padding: .8em 1.5em;
+        font-size: 1rem;
+        // padding-bottom: .55em;
+        // padding-top: .55em;
+        // font-size: .875em;
+    }
+    .controlbar.ui.menu:not(.vertical) .item > .button.icon{
+        padding: .8em 1em;
     }
 
 
