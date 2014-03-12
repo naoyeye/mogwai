@@ -139,6 +139,7 @@ a:hover {
 }
 
 
+
 /*******************************
             Elements
 *******************************/
@@ -167,6 +168,13 @@ a:hover {
     }
 
 
+    .pagination_wrap .pagination.ui.menu .item.disabled,
+    .pagination_wrap .pagination.ui.menu .item.disabled:hover{
+        background: #333!important;
+    }
+
+
+
 
 
 body{
@@ -191,7 +199,6 @@ header#header.ui.menu{
 }
 
 header#header.ui.menu .item{
-    // padding: .83em .95em;
     padding: 1.1em 1.2em;
 }
 header#header.ui.menu .item.logo{
@@ -201,10 +208,12 @@ header#header.ui.menu .item.logo{
     // color: #3baa24
 }
 header#header.ui.menu .item.logo span{
-    font-size: 14px;
+    font-size: 20px;
     vertical-align: top;
-    padding-top: 8px;
+    padding-top: 6px;
     display: inline-block;
+    font-family: 'Helvetica';
+    font-weight: 300;
 }
 
 // =============
@@ -241,10 +250,8 @@ header#header.ui.menu .item.logo span{
     aside.ui.menu .item .item,
     aside.ui.menu .item .item > a:not(.button){
         font-size: 14px;
-        // color: #333;
         display: block;
         padding: 10px;
-        // margin: -10px;
     }
     aside.ui.menu .item .item > a:not(.button){
         margin: -10px 0 -10px -10px;
@@ -253,15 +260,14 @@ header#header.ui.menu .item.logo span{
     aside.ui.menu .item .item .item,
     aside.ui.menu .item .item .item > a:not(.button){
         font-size: 12px !important;
-        // color: #333;
     }
     aside.ui.accordion .item .item .title{
         margin-left: 0px;
         padding-left: 0;
     }
     aside.ui.vertical.menu .item > .menu > .item{
-        padding: 12px 10px 12px 18px;
-
+        padding: 12px 18px 12px 18px;
+        font-size: 14px;
     }
     aside.ui.vertical.menu .item > .menu{
         margin: 0;
@@ -286,10 +292,12 @@ header#header.ui.menu .item.logo span{
     aside.ui.vertical.menu .item:last-child{
         margin-bottom: 7px;
     }
-
+    aside.ui.accordion .title .label{
+        float: right;
+    }
     #switchAsideBtn{
         position: absolute;
-        top: 15px;
+        top: 45px;
         right: -25px;
         padding: 1em 0.5em;
         border-radius: 0 5px 5px 0;
@@ -297,6 +305,9 @@ header#header.ui.menu .item.logo span{
         border:none;
         background: #333;
         z-index: 1;
+    }
+    #switchAsideBtn:hover{
+        color: #eee;
     }
 
 /* article */
@@ -308,18 +319,25 @@ header#header.ui.menu .item.logo span{
         transition:margin 0.2s;
     }
 
+
+
     #content > .ui.segment{
         margin-top: 0;
+        padding: 0 0 20px 0;
+    }
+
+    #content > .ui.segment > h1.header{
+        padding: 1em 0 1rem;
+        padding-left: 20px;
+        margin: 0;
     }
 
     .controlbar.ui.menu{
-        margin: 0 0 10px 0;
-        padding: 10px;
+        margin: 0;
+        padding: 0 0 2px 10px;
         height: 40px; /* bug O_O */
-        border-radius: 5px;
-        -webkit-box-sizing:10px;
-        -moz-box-sizing:10px;
-        box-sizing:10px;
+        border-radius: 0px;
+        box-shadow: none;
     }
     .controlbar.ui.menu .item:before{
         display: none;
@@ -327,22 +345,40 @@ header#header.ui.menu .item.logo span{
     .controlbar.ui.menu:not(.vertical) .item.buttons{
         padding: 0 10px 0 0;
     }
-    .controlbar.ui.menu:not(.vertical) .item > .button{
+    .controlbar.ui.menu:not(.vertical) .item > .button.mini{
         position: static;
         top: 0;
         margin: 0;
-        padding: .8em 1.5em;
-        font-size: 1rem;
+        padding: .8em;
+        font-size: 12px;
         // padding-bottom: .55em;
         // padding-top: .55em;
         // font-size: .875em;
     }
-    .controlbar.ui.menu:not(.vertical) .item > .button.icon{
-        padding: .8em 1em;
+    .controlbar.ui.menu:not(.vertical) > .button{
+        padding: .8em;
+    }
+
+    #content .ui.table thead{
+        background: #f4f4f4;
+    }
+    #content .ui.table thead th{
+        // color: #fff;
+    }
+    #content .ui.table thead th:first-child{
+        border-radius: 0;
+    }
+    #content .ui.table thead th:last-child{
+        border-radius: 0;
     }
 
 
-
+footer{
+    padding: 0 0 10px 0;
+    font-size: 12px;
+    text-align: center;
+    color: #ccc;
+}
 
 /* toggle */
 #main.aside_closed aside.ui.menu{
@@ -350,5 +386,5 @@ header#header.ui.menu .item.logo span{
 }
 #main.aside_closed #content{
     margin-left: 35px; 
-    margin-right: 25px; 
+    margin-right: 20px; 
 }
