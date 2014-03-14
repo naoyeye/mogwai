@@ -15,40 +15,95 @@
         <!-- endbuild -->
     </head>
     <body>
-        <!-- <header id="header" class="ui inverted menu">
-            <a id="logo" class="item" href="#">Logo</a>
-            <div class="item right">
-                <a href="#" class="button ui green huge">交换机啊</a>
-            </div>
-            <div class="right item">
-                <div class="ui icon input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search icon"></i>
-                </div>
-            </div>
-        </header> -->
         <header id="header" class="ui inverted menu">
             <a class="item logo">
-                <i class="icon-wdj-logo"></i> <span>WandouLabs - Multimedia Admin System</span>
+                <i class="icon-wdj-logo"></i> <span>OεOscar</span>
             </a>
-            <!-- <a class="item">
-                <i class="mail icon"></i> Messages
-            </a> -->
+
+            <div class="ui dropdown item">
+                <i class="icon video"></i>视频 <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item"><i class="icon add"></i>添加条目</a>
+                    <a class="item">浏览区</a>
+                    <a class="item">搜索风向标</a>
+                    <div class="ui dropdown pointing item">
+                        上下线 <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item">已下线视频</a>
+                            <a class="item">仅搜索可见的视频</a>
+                            <a class="item">字幕审核</a>
+                        </div>
+                    </div>
+                    <a class="item">合并拆分</a>
+                    <a class="item">提供方管理</a>
+                    <a class="item">DB</a>
+                    <div class="ui dropdown pointing item">
+                        公告 <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item">管理历史</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui dropdown item">
+                <i class="icon book"></i>电子书 <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item"><i class="icon add"></i>添加条目</a>
+                    <a class="item">浏览区</a>
+                    <a class="item">搜索风向标</a>
+                    <div class="ui dropdown pointing item">
+                        上下线 <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item">已下线视频</a>
+                            <a class="item">仅搜索可见的视频</a>
+                            <a class="item">字幕审核</a>
+                        </div>
+                    </div>
+                    <a class="item">合并拆分</a>
+                    <a class="item">提供方管理</a>
+                    <a class="item">DB</a>
+                    <div class="ui dropdown pointing item">
+                        公告 <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item">管理历史</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui dropdown item">
+                <i class="icon photo"></i>壁纸 <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item"><i class="icon add"></i>添加条目</a>
+                    <a class="item">浏览区</a>
+                    <a class="item">搜索风向标</a>
+                    <div class="ui dropdown pointing item">
+                        上下线 <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item">已下线视频</a>
+                            <a class="item">仅搜索可见的视频</a>
+                            <a class="item">字幕审核</a>
+                        </div>
+                    </div>
+                    <a class="item">合并拆分</a>
+                    <a class="item">提供方管理</a>
+                    <a class="item">DB</a>
+                    <div class="ui dropdown pointing item">
+                        公告 <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a class="item">管理历史</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="right menu">
                 <div class="item">
                     <div class="ui icon input">
-                        <input type="text" placeholder="Search...">
+                        <input type="text" placeholder="搜索">
                         <i class="search link icon"></i>
                     </div>
                 </div>
-                <!-- <div class="ui dropdown item">
-                    Language <i class="dropdown icon"></i>
-                    <div class="menu">
-                        <a class="item">English</a>
-                        <a class="item">Russian</a>
-                        <a class="item">Spanish</a>
-                    </div>
-                </div> -->
+
                 <div class="item">
                     <div class="ui green button icon"><i class="icon user"></i>登录</div>
                 </div>
@@ -56,85 +111,6 @@
         </header>
 
         <div id="main">
-            <!-- 左侧导航 -->
-            <aside class="ui vertical inverted accordion menu">
-                <div class="item">
-                    <a class="title active">
-                        <i class="dropdown icon"></i>
-                        <i class="video icon"></i>
-                        视频
-                    </a>
-                    <div class="content menu active">
-                        <div class="item">
-                            <a class="button ui small green fluid"><i class="icon add"></i>添加条目</a>
-                        </div>
-                        <a href="#" class="item">浏览区</a>
-                        <a href="#" class="item">搜索风向标</a>
-                        <div class="item">
-                            <a class="title active">
-                                上下线 <i class="dropdown icon"></i>
-                            </a>
-                            <div class="content menu active">
-                                <a class="item" href="#">已下线视频</a>
-                                <a class="item" href="#">仅搜索可见的视频</a> 
-                                <a class="item" href="#" >字幕审核</a>
-                            </div>
-                        </div>
-                        <a href="#" class="item">合并拆分</a>
-                        <a href="#" class="item">提供方管理</a>
-                        <a href="#" class="item">DB</a>
-                        <div class="item">
-                             <a class="title">
-                                公告 <i class="dropdown icon"></i>
-                            </a>
-                            <div class="content menu">
-                                <a href="#" class="item">管理历史</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="title">
-                        <i class="dropdown icon"></i>
-                        <i class="book icon"></i>
-                        电子书
-                    </a>
-                    <div class="content menu">
-                        <div class="item">
-                            <a class="title">
-                                <i class="dropdown icon"></i>
-                                第二级
-                            </a>
-                            <div class="content menu">
-                                <a href="#" class="item">这是一个链接</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <a class="title">
-                        <i class="dropdown icon"></i>
-                        <i class="photo icon"></i>
-                        壁纸
-                        <div class="ui red label small right">new</div>
-                    </a>
-                    <div class="content menu">
-                        <div class="item">
-                            <a class="title">
-                                <i class="dropdown icon"></i>
-                                第二级
-                            </a>
-                            <div class="content menu">
-                                <a href="#" class="item">这是一个链接</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="switchAsideBtn" class="button ui circular icon">
-                    <i class="left arrow icon"></i>
-                </div>
-            </aside>
 
 
             <!-- 右侧内容区 -->
@@ -142,135 +118,132 @@
 
                 <!-- 面包屑导航 -->
                 <div class="ui breadcrumb">
-                    <a class="section">视频</a>
+                    <span class="section">视频</span>
                     <i class="right arrow icon divider"></i>
-                    <a class="section">上下线</a>
-                    <i class="right arrow icon divider"></i>
-                    <div class="active section">字幕审核</div>
+                    <span class="section active">浏览区</span>
                 </div>
 
+                <h1 class="ui header medium">浏览区</h1>
 
-                <!-- 内容区 -->
-                <div class="ui segment">
-                    <h1 class="ui header medium">字幕审核</h1>
+                <!-- tab -->
+                <div class="ui top attached tabular menu">
+                    <a class="active item">StartPage <span class="ui red label small floating">2</span></a>
+                    <a class="item">追追看</a>
+                    <a class="item">电影</a>
+                    <a class="item">电视剧</a>
+                    <a class="item">动漫</a>
+                    <a class="item">综艺</a>
+                    <a class="item">其他</a>
+                </div>
 
                 <!-- 控制条 -->
                 <div class="ui menu controlbar">
-                    <div class="right item">
-                        <div class="ui icon input">
-                            <input type="text" placeholder="Search...">
-                            <i class="search icon"></i>
-                        </div>
-                    </div>
+                    <a href="javascript:void(0);" id="checkall" class="ui button mini"><i class="icon empty checkbox"></i><span>全部选择</span></a>
+
                     <div class="ui buttons item">
-                        <a href="javascript:void(0);" class="ui button mini green"><i class="icon remove sign"></i>按钮1</a>
-                        <a href="javascript:void(0);" class="ui button mini blue"><i class="sort 
-                        attributes descending icon"></i>按钮2</a>
-                        <a href="javascript:void(0);" class="ui button mini teal"><i class="sort 
-                        attributes ascending icon"></i>按钮3</a>
-                        <a href="javascript:void(0);" class="ui button mini red">按钮4</a>
-                        <a href="javascript:void(0);" class="ui button mini black">按钮5</a>
-                        <a href="javascript:void(0);" class="ui button mini">按钮6</a>
+                        <a href="javascript:void(0);" class="ui button mini blue"><i class="icon pencil"></i>编辑</a>
+                        <a href="javascript:void(0);" class="ui button mini red"><i class="icon remove"></i>删除</a>
                     </div>
-                    <a href="javascript:void(0);" class="ui button mini"><i class="icon sort"></i>按钮7</a>
+                    <a href="javascript:void(0);" class="ui button mini"><i class="icon sort"></i>排序</a>
                 </div>
 
-                    <!-- 数据展示 -->
-                    <table class="ui table basic">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>标题</th>
-                                <th>Status</th>
-                                <th>Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>No Name Specified</td>
-                                <td>Unknown</td>
-                                <td>None</td>
-                            </tr>
-                            <tr class="positive">
-                                <td>2</td>
-                                <td>Jimmy</td>
-                                <td><i class="icon checkmark"></i> Approved</td>
-                                <td>None</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Jamie</td>
-                                <td>Unknown</td>
-                                <td class="negative"><i class="icon close"></i> Requires call</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Jill</td>
-                                <td>Unknown</td>
-                                <td>None</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Jill</td>
-                                <td>Unknown</td>
-                                <td>None</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Jill</td>
-                                <td>Unknown</td>
-                                <td>None</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>Jill</td>
-                                <td>Unknown</td>
-                                <td>None</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>Jill</td>
-                                <td>Unknown</td>
-                                <td>None</td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>Jill</td>
-                                <td>Unknown</td>
-                                <td>None</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>Jill</td>
-                                <td>Unknown</td>
-                                <td>None</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- 数据展示 -->
+                <table class="ui table basic">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th><a href="javascript:void(0);">ID <i class="icon sort"></i></a> </th>
+                            <th>视频信息</th>
+                            <th>剧照</th>
+                            <th><a href="javascript:void(0);">已观看次数 <i class="icon sort"></i></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="t_w_30">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="fun" data-id="1">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td class="tc t_w_80">1</td>
+                            <td class="t_w_450">
+                                <div class="f_l_b">
+                                    <a href="###"><img src="http://ww3.sinaimg.cn/large/ed133892gw1eecyxgjppxj201r02st8j.jpg"></a>
+                                </div>
+                                <dl class="ml70 f12 m_info">
+                                    <dt><b>名称</b>: <a href="###">机械战警</a></dt>
+                                    <dd><b>别名</b>: 铁甲威龙</dd>
+                                    <dd><b>年份</b>: 2014</dd>
+                                    <dd><b>分类</b>: 科幻</dd>
+                                    <dd><b>类型</b>: 动作 / 科幻 / 惊悚 / 犯罪</dd>
+                                    <dd><b>描述</b>: 2028年，专事军火开发的机器人公司Omni Corp.生产了大量装备精良的机械战警，他们被投入到维和和惩治犯罪等行动中，取得显著的效果...<a href="#">展开</a></dd>
+                                </dl>
+                            </td>
+                            <td class="t_w_300 t_w_400_m">
+                                <ul class="m_cover_list">
+                                    <li><img src="http://ww3.sinaimg.cn/large/ed133892gw1eecyxgjppxj201r02st8j.jpg"></li>
+                                    <li><img src="http://ww3.sinaimg.cn/large/ed133892gw1eecyxgjppxj201r02st8j.jpg"></li>
+                                    <li><img src="http://ww3.sinaimg.cn/large/ed133892gw1eecyxgjppxj201r02st8j.jpg"></li>
+                                </ul>
+                            </td>
+                            <td class="tc t_w_140">3243</td>
+                        </tr>
+                        <tr>
+                            <td class="t_w_30">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="fun" data-id="2">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td class="tc t_w_80">2</td>
+                            <td class="t_w_450">
+                                <div class="f_l_b">
+                                    <a href="###"><img src="http://ww3.sinaimg.cn/large/ed133892gw1eecyxgjppxj201r02st8j.jpg"></a>
+                                </div>
+                                <dl class="ml70 f12 m_info">
+                                    <dt><b>名称</b>: <a href="###">机械战警</a></dt>
+                                    <dd><b>别名</b>: 铁甲威龙</dd>
+                                    <dd><b>年份</b>: 2014</dd>
+                                    <dd><b>分类</b>: 科幻</dd>
+                                    <dd><b>类型</b>: 动作 / 科幻 / 惊悚 / 犯罪</dd>
+                                    <dd><b>描述</b>: <a href="#">展开</a></dd>
+                                </dl>
+                            </td>
+                            <td class="t_w_300 t_w_400_m">
+                                <ul class="m_cover_list">
+                                    <li><img src="http://ww3.sinaimg.cn/large/ed133892gw1eecyxgjppxj201r02st8j.jpg"></li>
+                                    <li><img src="http://ww3.sinaimg.cn/large/ed133892gw1eecyxgjppxj201r02st8j.jpg"></li>
+                                    <li><img src="http://ww3.sinaimg.cn/large/ed133892gw1eecyxgjppxj201r02st8j.jpg"></li>
+                                </ul>
+                            </td>
+                            <td class="tc t_w_140">3243</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                    <!-- 分页 -->
-                    <div class="pagination_wrap">
-                        <div class="ui borderless pagination menu">
-                            <a class="item">
-                                <i class="left arrow icon"></i> 上一页
-                            </a>
-                            <a class="item active disabled">1</a>
-                            <a class="item">2</a>
-                            <a class="item">3</a>
-                            <a class="item">4</a>
-                            <a class="item">5</a>
-                            <a class="item">6</a>
-                            <a class="item">
-                                下一页 <i class="icon right arrow"></i>
-                            </a>
-                        </div>
+                <!-- 分页 -->
+                <div class="pagination_wrap">
+                    <div class="ui borderless pagination menu">
+                        <a class="item">
+                            <i class="left arrow icon"></i> 上一页
+                        </a>
+                        <a class="item active disabled">1</a>
+                        <a class="item">2</a>
+                        <a class="item">3</a>
+                        <a class="item">4</a>
+                        <a class="item">5</a>
+                        <a class="item">6</a>
+                        <a class="item">
+                            下一页 <i class="icon right arrow"></i>
+                        </a>
                     </div>
                 </div>
+                
             </article>
         </div>
         <footer>
-            version 0.0.1  (⊙ˍ⊙)
+            version 0.0.1  (⊙ˍ⊙) 2014.03.11
         </footer>
     </body>
 </html>

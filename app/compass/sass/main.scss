@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: 'wandoujia';
     src:url('../fonts/wandoujia.eot?tnjbzq');
@@ -139,12 +140,34 @@ a:hover {
 }
 
 
+.f12{font-size: 12px;}
+
+.f_l_b{float: left;}
+
+.ml70{margin-left: 70px;}
+
+.tc{text-align: center;}
+.t_w_30{
+    width: 30px;
+    text-align: center;
+    padding: 0;
+}
+.t_w_80{min-width: 70px;}
+.t_w_100{min-width: 100px;}
+.t_w_140{min-width: 140px;}
+.t_w_200{min-width: 200px;}
+.t_w_300{min-width: 300px;}
+.t_w_400{min-width: 400px;}
+.t_w_450{min-width: 450px;}
+
+.t_w_400_m{max-width: 400px;}
 
 /*******************************
             Elements
 *******************************/
     .pagination_wrap{
-        margin-top: 30px;
+        padding: 30px 0 20px 0;
+        background: #fff;
         text-align: center;
     }
     .pagination_wrap .pagination{
@@ -199,7 +222,18 @@ header#header.ui.menu{
 }
 
 header#header.ui.menu .item{
-    padding: 1.1em 1.2em;
+    padding: 1.15em 1.2em;
+}
+header#header.ui.menu > .dropdown > .menu > .dropdown > .menu{
+    margin-left: 10px !important;
+    border-radius: .325em !important;
+}
+header#header.ui.menu > .dropdown > .menu > .dropdown > .menu:after{
+    top: 18px;
+    left: 0;
+    margin:  -.25em 0 0 -.25em;
+    -webkit-box-shadow: -1px 1px 0 1px rgba(0,0,0,.05);
+    box-shadow: -1px 1px 0 1px rgba(0,0,0,.05);
 }
 header#header.ui.menu .item.logo{
     font-size: 28px;
@@ -218,7 +252,7 @@ header#header.ui.menu .item.logo span{
 
 // =============
 #main{
-    padding: 20px 15px 30px 0px;
+    // padding: 20px 15px 30px 15px;
 }
 #main:after{
     content: " ";
@@ -229,52 +263,51 @@ header#header.ui.menu .item.logo span{
 }
 
 /* aside */
-    aside.ui.menu{
+    #topnav.ui.menu{
         position: relative;
-        float: left;
         border-radius: 0 5px 5px 0;
         box-shadow: none;
         -webkit-transition:margin 0.2s;
         -moz-transition:margin 0.2s;
         transition:margin 0.2s;
     }
-    aside.ui.menu .item{
+    #topnav.ui.menu .item{
         display: block;
         padding: 0;
     }
 
-    aside.ui.menu .item > a:not(.button){
+    #topnav.ui.menu .item > a:not(.button){
         display: block;
         padding: 15px 10px;
     }
-    aside.ui.menu .item .item,
-    aside.ui.menu .item .item > a:not(.button){
+    #topnav.ui.menu .item .item,
+    #topnav.ui.menu .item .item > a:not(.button){
         font-size: 14px;
         display: block;
         padding: 10px;
     }
-    aside.ui.menu .item .item > a:not(.button){
+    #topnav.ui.menu .item .item > a:not(.button){
         margin: -10px 0 -10px -10px;
         background: none;
     }
-    aside.ui.menu .item .item .item,
-    aside.ui.menu .item .item .item > a:not(.button){
+    #topnav.ui.menu .item .item .item,
+    #topnav.ui.menu .item .item .item > a:not(.button){
         font-size: 12px !important;
     }
     aside.ui.accordion .item .item .title{
         margin-left: 0px;
         padding-left: 0;
     }
-    aside.ui.vertical.menu .item > .menu > .item{
+    #topnav.ui.menu .item > .menu > .item{
         padding: 12px 18px 12px 18px;
         font-size: 14px;
     }
-    aside.ui.vertical.menu .item > .menu{
+    #topnav.ui.menu .item > .menu{
         margin: 0;
         padding: 0px;
     }
 
-    aside.ui.vertical.menu .item > .menu .menu{
+    #topnav.ui.menu .item > .menu .menu{
         margin: 10px 0 -12px 0;
     }
     aside.ui.accordion .title,
@@ -285,14 +318,14 @@ header#header.ui.menu .item.logo span{
         margin-right: 0;
     }
 
-    aside.ui.vertical.menu > .item:first-child{
+    #topnav.ui.menu > .item:first-child{
         border-radius: 0 5px 0 0;
         overflow: hidden;
     }
-    aside.ui.vertical.menu .item:last-child{
+    #topnav.ui.menu .item:last-child{
         margin-bottom: 7px;
     }
-    aside.ui.accordion .title .label{
+    div.ui.accordion .title .label{
         float: right;
     }
     #switchAsideBtn{
@@ -313,28 +346,41 @@ header#header.ui.menu .item.logo span{
 /* article */
     #content{
         margin-top: 0;
-        margin-left: 255px;
         -webkit-transition:margin 0.2s;
         -moz-transition:margin 0.2s;
         transition:margin 0.2s;
     }
 
-
-
-    #content > .ui.segment{
-        margin-top: 0;
-        padding: 0 0 20px 0;
+    #content > .breadcrumb{
+        font-size: 12px;
+        color: #999;
+        margin:20px 30px 10px 30px;
     }
+    // #content > .ui.segment{
+    //     margin-top: 0;
+    //     padding: 0 0 20px 0;
+    // }
 
-    #content > .ui.segment > h1.header{
-        padding: 1em 0 1rem;
-        padding-left: 20px;
+    #content > h1.header{
+        padding: 0 30px 10px 30px;
         margin: 0;
+    }
+    #content .ui.tabular.menu .item{
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        font-size: 12px;
+        color: #444;
+    }
+    #content .ui.tabular.menu .item:first-child{
+        margin-left: 30px;
+    }
+    #content .menu.tabular:after{
+        display: none; /* bug O_O */
     }
 
     .controlbar.ui.menu{
         margin: 0;
-        padding: 0 0 2px 10px;
+        padding: 10px 10px 2px 30px;
         height: 40px; /* bug O_O */
         border-radius: 0px;
         box-shadow: none;
@@ -342,9 +388,14 @@ header#header.ui.menu .item.logo span{
     .controlbar.ui.menu .item:before{
         display: none;
     }
+    #checkall{
+        margin: 0 10px 0 0;
+    }
     .controlbar.ui.menu:not(.vertical) .item.buttons{
+        display: none;
         padding: 0 10px 0 0;
     }
+
     .controlbar.ui.menu:not(.vertical) .item > .button.mini{
         position: static;
         top: 0;
@@ -358,7 +409,9 @@ header#header.ui.menu .item.logo span{
     .controlbar.ui.menu:not(.vertical) > .button{
         padding: .8em;
     }
-
+    #content .ui.table{
+        color: #333;
+    }
     #content .ui.table thead{
         background: #f4f4f4;
     }
@@ -371,20 +424,46 @@ header#header.ui.menu .item.logo span{
     #content .ui.table thead th:last-child{
         border-radius: 0;
     }
+    #content .ui.table .ui.checkbox label{
+        padding-left: 0;
+    }
+    #content .ui.table th{
+        text-align: center;
+    }
+    #content .m_info dt{
+        font-weight: bold;
+    }
+    #content .m_info dt,
+    #content .m_info dd{
+        line-height: 1.6;
+        padding: 0 0 5px 3px;
+    }
+    #content .m_info dd{
+        color: #666;
+    }
+    #content .m_info dd b{
+        color: #333;
+    }
+    #content .m_cover_list{
+        text-align: center;
+    }
+    #content .m_cover_list li{
+        display: inline-block;
+    }
+
+    #content .ui.basic.table tr > td{
+        box-shadow: -1px 0 0 rgba(0,0,0,0.1);
+    }
+    #content .ui.basic.table tr > td:first-child{
+        background: #f8f8f8;
+    }
 
 
 footer{
-    padding: 0 0 10px 0;
+    padding: 20px 0;
     font-size: 12px;
     text-align: center;
     color: #ccc;
 }
 
-/* toggle */
-#main.aside_closed aside.ui.menu{
-    margin-left: -225px;
-}
-#main.aside_closed #content{
-    margin-left: 35px; 
-    margin-right: 20px; 
-}
+
